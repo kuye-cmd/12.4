@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var numRows=10;
+    var arr=[];
+    var arr1=[];  
+    arr.push("")
+    for(var i=0;i<numRows;i++){
+        arr=[];
+        for(var j=0;j<=i;j++){
+            if (j==0 || j==i) {
+                arr.push(1);
+            }else{
+                arr.push(arr1[i-1][j-1]+arr1[i-1][j]);
+            }
+        }
+        arr1[i]=arr;
+    }  
+    console.log(arr1);
+</script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a=/ [qwertyuiopQWERTYUIOP]+ | [asdfghjklASDFGHJKL]+ | [zxcvbnmZXCVBNM]+ /g;
+    var arr=["Hello","tree","Alaska","Dad","Peace"];arr.push("");arr.unshift("");
+    var arrx=arr.join("  ");
+    // console.log(arrx);
+    console.log(arrx.match(a));
+</script>
+</html>
